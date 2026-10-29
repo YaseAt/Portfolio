@@ -68,3 +68,9 @@ align-items: center;
     background: black;
     border-radius: 50%;
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .smiley {
+    display: none !important;
+  }
+}
