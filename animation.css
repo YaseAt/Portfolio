@@ -1,0 +1,70 @@
+.smiley{
+position:relative;
+width: 300px;
+height: 300px;
+border-radius: 50%;
+background: #ffcd00;
+border: 2px solid black;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.smiley::before{
+    content: "";
+    position: absolute;
+    top: 180px;
+    width: 150px;
+    height: 70px;
+    background: #b57700;
+    border: 2px solid black;
+    border-radius: 10px 10px 75px 75px;
+    transition: 0.5s;
+}
+
+.smiley:hover::before{
+    top:210px;
+    width: 30px;
+    height: 30px;
+    background: #b57700;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.occhi {
+    position: relative;
+    top: -40px;
+    display: flex;
+}
+
+.occhi .occhio{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    display: block;
+    background: white;
+    margin: 0 15px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.occhio {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: white;
+    margin: 0 15px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.pupilla {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+}

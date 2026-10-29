@@ -1,0 +1,75 @@
+   :root {
+  --border: rgb(32, 19, 72);
+  --reddish: #fc5658;
+  --bluish: rgb(55, 177, 188);
+  --whitish: rgb(242, 217, 188);
+  --mustard: rgb(253, 186, 80);
+}
+
+#skill {
+    padding: 60px 5%;
+    z-index: 1;
+}
+
+.catena {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.icone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-width: 100px;
+}
+
+.icon {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid var(--border);
+    border-radius: 50%;
+    box-shadow: 5px 5px 0 var(--border);
+
+    transition: transform 0.2s ease;
+}
+
+.icone p {
+  font-weight: bold;
+}
+
+#html {
+    background: var(--reddish);
+}
+#css {
+    background: var(--bluish);
+}
+#js {
+    background: var(--reddish);
+}
+#java {
+    background: var(--mustard);
+}
+#python {
+    background: var(--reddish);
+}
+#kotlin {
+    background: var(--bluish);
+}
+#sql {
+    background: var(--mustard);
+}
+#git {
+    background: var(--bluish);
+}
+ i{
+    font-size: 42px;
+    color: var(--border);
+ }

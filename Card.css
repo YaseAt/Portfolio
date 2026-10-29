@@ -1,0 +1,124 @@
+:root {
+  --border: rgb(32, 19, 72);
+  --reddish: #fc5658;
+  --bluish: rgb(55, 177, 188);
+  --whitish: rgb(242, 217, 188);
+  --mustard: rgb(253, 186, 80);
+}
+
+#blockIstruzione {
+  padding: 50px 5%;
+}
+
+#blockLavoro {
+  padding: 50px 5%;
+}
+
+#blockIstruzione h3 {
+  font-family: "Bungee", sans-serif;
+  font-size: 35px;
+  color: var(--border);
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.card {
+  position: relative;
+  padding: 30px;
+  border: 3px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 8px 8px 0 var(--border);
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+#l { background-color: var(--bluish);
+}
+#u { background-color: var(--mustard);
+}
+#scu { background-color: var(--mustard);
+}
+.card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 var(--border);
+}
+
+.card-anno {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: var(--reddish);
+  border: 2px solid var(--border);
+  color: var(--border);
+  font-family: "Bungee", sans-serif;
+  font-size: 11px;
+}
+
+.card h4 {
+  font-family: "Bungee", sans-serif;
+  font-size: 20px;
+  color: var(--border);
+  margin: 20px 0 10px;
+}
+
+.card-corso {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-luogo {
+  font-size: 14px;
+  color: var(--border);
+}
+
+   li {
+font-size: 20px;
+color: var(--border);
+    }
+
+#scu {
+    position: relative;
+    background-color: var(--mustard);
+    cursor: pointer;
+    z-index: 2;
+}
+
+#pop {
+    display: none;
+    position: absolute;
+
+    top: 0;
+    left: calc(100% + 20px);
+
+    width: 550px;
+    box-sizing: border-box;
+    padding: 25px;
+
+    background-color: #ffdfa9;
+    border: 3px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 8px 8px 0 var(--border);
+
+    z-index: 999;
+    text-align: left;
+}
+
+#scu:hover #pop {
+    display: block;
+}
+
+
+/* Layout per smartphone */
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  #blockIstruzione {
+    padding: 30px 20px;
+  }
+}
